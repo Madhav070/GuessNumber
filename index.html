@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Guess?</title>
+  </head>
+  <body>
+    <h1 class="font-bold text-5xl text-center py-[1rem] shadow-xl text-slate-700">
+      Guess Game
+    </h1>
+    <div class="flex justify-center items-center my-[25vh]">
+      <div class="border-2 border-slate-800 py-[2rem] px-[3rem] rounded-2xl shadow-xl bg-slate-200">
+        <h1 class="font-bold text-3xl text-slate-800 border-b-2 border-slate-500 shadow-xl ">Guess a number from 1 to 100</h1>
+        <div class="flex flex-wrap justify-around items-center my-[1rem]">
+          <input id="inputGuess" type="text" class="border-2 py-[0.5rem] px-[1rem] rounded-lg">
+          <button value="Guess..?" id="guessBtn" class="border-2 border-green-600 bg-green-600 text-white font-bold rounded-lg py-[0.3rem] px-[1rem] my-[1rem]">Guess..?</button>
+        </div>
+        <div id="ansBox" class="text-center text-lg"></div>
+        <div id="numGuesses" class="text-lg text-center">Number of Guesses : 0</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
